@@ -1,0 +1,51 @@
+Nu skriver jag en mening. I för att skriva ESC för att komma bort, W för att komma ett ord framår. B är bakåt.
+
+I normal mode kan man anväda sig av kommandon.
+Kommandon består av actions (något man gör) och movements (sätt att förflytta sig)
+
+Exempel på movements:
+w	word, förflytta dig ett ord framåt
+b	back, förflytta sig ett ord bakåt
+h	vänster
+l	höger
+j	ner
+k	upp
+g	Gå till bottnet av filen
+gg	gå till toppen av filen
+0	gå till början av raden
+$	gå till slutet av raden
+
+
+Man kan modifiera movements med tal, prova t.ex 2w
+
+Exempel på actions:
+i	insert, går in i insert mode vid kursorn
+I	Insert, går in i insert mode vid början av raden
+a	append, gå in i insert mode en bokstav till höger om kursorn
+A	Append, gå in i insert mode i slutet av raden
+o	gå in i inser mode en rad under, skapa ny rad
+O	gå in i insert mode en rad ovanför, skapa ny rad
+
+d	delete, radera text, kräver en movement, raderar allt mellan kursorn och vart den flyttar sig
+dd	raderar en rad
+d3d	raderar tre rader
+D	raderartill slutet av raden
+
+u	undo, förintegör förra imputten eller kommandot
+Ctrl-R	redo
+-	gör om förra kommandot
+
+C	change, samma som d, fast starter inser mode
+mer komplicerade kommandon skrivs med :
+:w	write, sparar filen
+	raderar tre rader
+D	raderartill slutet av raden
+
+u	undo, förintegör förra imputten eller kommandot
+Ctrl-R	redo
+-	gör om förra kommandot
+
+C	change, samma som d, fast starter inser mode
+mer komplicerade kommandon skrivs med :
+:w	write, sparar filen
+::
